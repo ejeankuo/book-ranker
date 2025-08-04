@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		84C1383B2E40768A00002F43 /* book_ratingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138392E40768A00002F43 /* book_ratingTests.swift */; };
+		84C138442E40793400002F43 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138422E40781300002F43 /* Home.swift */; };
+		84C138452E40793F00002F43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138342E40767200002F43 /* ContentView.swift */; };
+		84C138462E40794500002F43 /* book_ratingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138332E40767200002F43 /* book_ratingApp.swift */; };
+		84C138472E40795000002F43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C138312E40767200002F43 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		84C138152E40763600002F43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,25 +35,15 @@
 		84C138062E40763500002F43 /* book rating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book rating.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C138142E40763600002F43 /* book ratingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book ratingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C1381E2E40763600002F43 /* book ratingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book ratingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C138312E40767200002F43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84C138322E40767200002F43 /* book_rating.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = book_rating.entitlements; sourceTree = "<group>"; };
+		84C138332E40767200002F43 /* book_ratingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_ratingApp.swift; sourceTree = "<group>"; };
+		84C138342E40767200002F43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84C138392E40768A00002F43 /* book_ratingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_ratingTests.swift; sourceTree = "<group>"; };
+		84C1383C2E40769B00002F43 /* book_ratingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_ratingUITests.swift; sourceTree = "<group>"; };
+		84C1383D2E40769B00002F43 /* book_ratingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_ratingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84C138422E40781300002F43 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		84C138082E40763500002F43 /* book rating */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "book rating";
-			sourceTree = "<group>";
-		};
-		84C138172E40763600002F43 /* book ratingTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "book ratingTests";
-			sourceTree = "<group>";
-		};
-		84C138212E40763600002F43 /* book ratingUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "book ratingUITests";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		84C138032E40763500002F43 /* Frameworks */ = {
@@ -75,10 +73,10 @@
 		84C137FD2E40763500002F43 = {
 			isa = PBXGroup;
 			children = (
-				84C138082E40763500002F43 /* book rating */,
-				84C138172E40763600002F43 /* book ratingTests */,
-				84C138212E40763600002F43 /* book ratingUITests */,
 				84C138072E40763500002F43 /* Products */,
+				84C138352E40767200002F43 /* book rating */,
+				84C1383A2E40768A00002F43 /* book ratingTests */,
+				84C1383E2E40769B00002F43 /* book ratingUITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +88,43 @@
 				84C1381E2E40763600002F43 /* book ratingUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		84C138352E40767200002F43 /* book rating */ = {
+			isa = PBXGroup;
+			children = (
+				84C138312E40767200002F43 /* Assets.xcassets */,
+				84C138322E40767200002F43 /* book_rating.entitlements */,
+				84C138332E40767200002F43 /* book_ratingApp.swift */,
+				84C138342E40767200002F43 /* ContentView.swift */,
+				84C1383F2E4076ED00002F43 /* view */,
+			);
+			path = "book rating";
+			sourceTree = "<group>";
+		};
+		84C1383A2E40768A00002F43 /* book ratingTests */ = {
+			isa = PBXGroup;
+			children = (
+				84C138392E40768A00002F43 /* book_ratingTests.swift */,
+			);
+			path = "book ratingTests";
+			sourceTree = "<group>";
+		};
+		84C1383E2E40769B00002F43 /* book ratingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84C1383C2E40769B00002F43 /* book_ratingUITests.swift */,
+				84C1383D2E40769B00002F43 /* book_ratingUITestsLaunchTests.swift */,
+			);
+			path = "book ratingUITests";
+			sourceTree = "<group>";
+		};
+		84C1383F2E4076ED00002F43 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				84C138422E40781300002F43 /* Home.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +141,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				84C138082E40763500002F43 /* book rating */,
 			);
 			name = "book rating";
 			packageProductDependencies = (
@@ -130,9 +162,6 @@
 			dependencies = (
 				84C138162E40763600002F43 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				84C138172E40763600002F43 /* book ratingTests */,
-			);
 			name = "book ratingTests";
 			packageProductDependencies = (
 			);
@@ -152,9 +181,6 @@
 			);
 			dependencies = (
 				84C138202E40763600002F43 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				84C138212E40763600002F43 /* book ratingUITests */,
 			);
 			name = "book ratingUITests";
 			packageProductDependencies = (
@@ -212,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C138472E40795000002F43 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C138452E40793F00002F43 /* ContentView.swift in Sources */,
+				84C138462E40794500002F43 /* book_ratingApp.swift in Sources */,
+				84C138442E40793400002F43 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C1383B2E40768A00002F43 /* book_ratingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
