@@ -24,20 +24,20 @@ struct ContentView: View {
                 .background()
                 .tag(Tab.Feed)
             
-            Text("Lists View")
+            Text("Library View")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background()
-                .tag(Tab.Lists)
+                .tag(Tab.Library)
             
             Text("Search View")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background()
                 .tag(Tab.Search)
             
-            Text("Notifications View")
+            /*Text("Notifications View")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background()
-                .tag(Tab.Notifications)
+                .tag(Tab.Notifications)*/
             
             Text("Profile View")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -74,20 +74,6 @@ struct ContentView: View {
                         .frame(width: 25, height: 25)
                         .frame(maxWidth: .infinity)
                         .fontWeight(currentTab == tab ? .bold: .regular)
-                        .background(
-                            ZStack{
-                                /*if currentTab == tab {
-                                    MaterialEffect(style: .light)
-                                        .clipShape(Circle())
-                                        .matchedGeometryEffect(id: "Tab", in: animation)
-                                    Text(tab.Tabname)
-                                        .foregroundColor(.primary)
-                                        .font(.footnote)
-                                        .padding(.top, 50)
-                                } */
-                            }
-                        )//.contentShape(Rectangle())
-                        //.offset(y: currentTab == tab ? -15 : 0)
                     Text(tab.Tabname)
                         .font(.footnote)
                         .fontWeight(currentTab == tab ? .bold : .regular)
@@ -105,21 +91,21 @@ struct ContentView: View {
 
 enum Tab: String, CaseIterable {
     case Feed = "newspaper"
-    case Lists = "list.bullet"
-    case Search = "plus.circle.fill"
-    case Notifications = "bell"
+    case Library = "books.vertical"
+    case Search = "magnifyingglass.circle"
+    //case Notifications = "bell"
     case Profile = "person.circle.fill"
     
     var Tabname: String {
         switch self {
         case .Feed:
             return "Feed"
-        case .Lists:
-            return "Lists"
+        case .Library:
+            return "Library"
         case .Search:
             return "Search"
-        case .Notifications:
-            return "Notifications"
+        //case .Notifications:
+            //return "Notifications"
         case .Profile:
             return "Profile"
         }
