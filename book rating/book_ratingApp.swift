@@ -4,6 +4,7 @@
 //
 //  Created by Ejean Kuo on 8/3/25.
 //
+//  app entry point
 
 import SwiftUI
 

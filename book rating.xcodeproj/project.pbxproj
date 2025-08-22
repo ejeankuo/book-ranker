@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		84C1383B2E40768A00002F43 /* book_ratingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138392E40768A00002F43 /* book_ratingTests.swift */; };
-		84C138442E40793400002F43 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138422E40781300002F43 /* Home.swift */; };
+		84C138442E40793400002F43 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138422E40781300002F43 /* Feed.swift */; };
 		84C138452E40793F00002F43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138342E40767200002F43 /* ContentView.swift */; };
 		84C138462E40794500002F43 /* book_ratingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138332E40767200002F43 /* book_ratingApp.swift */; };
 		84C138472E40795000002F43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C138312E40767200002F43 /* Assets.xcassets */; };
-		84C1384A2E40929400002F43 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138492E40928F00002F43 /* Product.swift */; };
+		84C1384A2E40929400002F43 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138492E40928F00002F43 /* Book.swift */; };
+		84C1384C2E5519F800002F43 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1384B2E5519F200002F43 /* Library.swift */; };
+		84C1384E2E551A0000002F43 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1384D2E5519FC00002F43 /* Search.swift */; };
+		84C138502E551A0600002F43 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1384F2E551A0300002F43 /* Profile.swift */; };
+		84C138522E551A6600002F43 /* BookCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138512E551A5F00002F43 /* BookCompare.swift */; };
+		84C138542E551F3800002F43 /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138532E551F3400002F43 /* Sentiment.swift */; };
+		84C138562E551F4100002F43 /* RankingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138552E551F3B00002F43 /* RankingEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +49,14 @@
 		84C138392E40768A00002F43 /* book_ratingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_ratingTests.swift; sourceTree = "<group>"; };
 		84C1383C2E40769B00002F43 /* book_ratingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_ratingUITests.swift; sourceTree = "<group>"; };
 		84C1383D2E40769B00002F43 /* book_ratingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_ratingUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		84C138422E40781300002F43 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		84C138492E40928F00002F43 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		84C138422E40781300002F43 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		84C138492E40928F00002F43 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		84C1384B2E5519F200002F43 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		84C1384D2E5519FC00002F43 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		84C1384F2E551A0300002F43 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		84C138512E551A5F00002F43 /* BookCompare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCompare.swift; sourceTree = "<group>"; };
+		84C138532E551F3400002F43 /* Sentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
+		84C138552E551F3B00002F43 /* RankingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +137,11 @@
 		84C1383F2E4076ED00002F43 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				84C138422E40781300002F43 /* Home.swift */,
+				84C1384D2E5519FC00002F43 /* Search.swift */,
+				84C1384F2E551A0300002F43 /* Profile.swift */,
+				84C1384B2E5519F200002F43 /* Library.swift */,
+				84C138422E40781300002F43 /* Feed.swift */,
+				84C138512E551A5F00002F43 /* BookCompare.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -133,7 +149,9 @@
 		84C138482E40927800002F43 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				84C138492E40928F00002F43 /* Product.swift */,
+				84C138492E40928F00002F43 /* Book.swift */,
+				84C138532E551F3400002F43 /* Sentiment.swift */,
+				84C138552E551F3B00002F43 /* RankingEngine.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -275,9 +293,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C138452E40793F00002F43 /* ContentView.swift in Sources */,
-				84C1384A2E40929400002F43 /* Product.swift in Sources */,
+				84C1384A2E40929400002F43 /* Book.swift in Sources */,
+				84C1384C2E5519F800002F43 /* Library.swift in Sources */,
+				84C138502E551A0600002F43 /* Profile.swift in Sources */,
+				84C138562E551F4100002F43 /* RankingEngine.swift in Sources */,
+				84C1384E2E551A0000002F43 /* Search.swift in Sources */,
+				84C138542E551F3800002F43 /* Sentiment.swift in Sources */,
 				84C138462E40794500002F43 /* book_ratingApp.swift in Sources */,
-				84C138442E40793400002F43 /* Home.swift in Sources */,
+				84C138442E40793400002F43 /* Feed.swift in Sources */,
+				84C138522E551A6600002F43 /* BookCompare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
