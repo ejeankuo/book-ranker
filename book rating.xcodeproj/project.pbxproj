@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8447D5E72E5CD37400E97D46 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5E62E5CD37100E97D46 /* AuthView.swift */; };
+		8447D5EB2E5CDBFD00E97D46 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5EA2E5CDBFA00E97D46 /* LogInView.swift */; };
+		8447D5F22E5CE53900E97D46 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5F12E5CE53300E97D46 /* AuthViewModel.swift */; };
+		8447D5F52E5CE58600E97D46 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5F42E5CE58600E97D46 /* EmailView.swift */; };
+		8447D5F82E5CE63300E97D46 /* RanklitTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5F72E5CE63300E97D46 /* RanklitTextField.swift */; };
+		8447D5FA2E5CE93900E97D46 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5F92E5CE93900E97D46 /* NameView.swift */; };
+		8447D5FE2E5CEA1E00E97D46 /* UsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5FD2E5CEA1E00E97D46 /* UsernameView.swift */; };
+		8447D6002E5CEB2400E97D46 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5FF2E5CEB2300E97D46 /* AgeView.swift */; };
 		84C1383B2E40768A00002F43 /* book_ratingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138392E40768A00002F43 /* book_ratingTests.swift */; };
 		84C138442E40793400002F43 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138422E40781300002F43 /* Feed.swift */; };
 		84C138452E40793F00002F43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138342E40767200002F43 /* ContentView.swift */; };
@@ -39,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8447D5E62E5CD37100E97D46 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		8447D5EA2E5CDBFA00E97D46 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		8447D5F12E5CE53300E97D46 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		8447D5F42E5CE58600E97D46 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		8447D5F72E5CE63300E97D46 /* RanklitTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RanklitTextField.swift; sourceTree = "<group>"; };
+		8447D5F92E5CE93900E97D46 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		8447D5FD2E5CEA1E00E97D46 /* UsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameView.swift; sourceTree = "<group>"; };
+		8447D5FF2E5CEB2300E97D46 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
 		84C138062E40763500002F43 /* book rating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book rating.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C138142E40763600002F43 /* book ratingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book ratingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C1381E2E40763600002F43 /* book ratingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "book ratingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +100,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8447D5E52E5CD36600E97D46 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8447D5F32E5CE55A00E97D46 /* Register */,
+				8447D5F12E5CE53300E97D46 /* AuthViewModel.swift */,
+				8447D5EA2E5CDBFA00E97D46 /* LogInView.swift */,
+				8447D5E62E5CD37100E97D46 /* AuthView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		8447D5F32E5CE55A00E97D46 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				8447D5F42E5CE58600E97D46 /* EmailView.swift */,
+				8447D5F92E5CE93900E97D46 /* NameView.swift */,
+				8447D5FD2E5CEA1E00E97D46 /* UsernameView.swift */,
+				8447D5FF2E5CEB2300E97D46 /* AgeView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		8447D5F62E5CE61700E97D46 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8447D5F72E5CE63300E97D46 /* RanklitTextField.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		84C137FD2E40763500002F43 = {
 			isa = PBXGroup;
 			children = (
@@ -107,12 +153,14 @@
 		84C138352E40767200002F43 /* book rating */ = {
 			isa = PBXGroup;
 			children = (
+				8447D5F62E5CE61700E97D46 /* Util */,
+				8447D5E52E5CD36600E97D46 /* Auth */,
 				84C138312E40767200002F43 /* Assets.xcassets */,
 				84C138322E40767200002F43 /* book_rating.entitlements */,
 				84C138332E40767200002F43 /* book_ratingApp.swift */,
 				84C138342E40767200002F43 /* ContentView.swift */,
 				84C138482E40927800002F43 /* Models */,
-				84C1383F2E4076ED00002F43 /* view */,
+				84C1383F2E4076ED00002F43 /* View */,
 			);
 			path = "book rating";
 			sourceTree = "<group>";
@@ -134,7 +182,7 @@
 			path = "book ratingUITests";
 			sourceTree = "<group>";
 		};
-		84C1383F2E4076ED00002F43 /* view */ = {
+		84C1383F2E4076ED00002F43 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				84C1384D2E5519FC00002F43 /* Search.swift */,
@@ -143,7 +191,7 @@
 				84C138422E40781300002F43 /* Feed.swift */,
 				84C138512E551A5F00002F43 /* BookCompare.swift */,
 			);
-			path = view;
+			path = View;
 			sourceTree = "<group>";
 		};
 		84C138482E40927800002F43 /* Models */ = {
@@ -294,13 +342,21 @@
 			files = (
 				84C138452E40793F00002F43 /* ContentView.swift in Sources */,
 				84C1384A2E40929400002F43 /* Book.swift in Sources */,
+				8447D5EB2E5CDBFD00E97D46 /* LogInView.swift in Sources */,
+				8447D5F52E5CE58600E97D46 /* EmailView.swift in Sources */,
 				84C1384C2E5519F800002F43 /* Library.swift in Sources */,
+				8447D5FA2E5CE93900E97D46 /* NameView.swift in Sources */,
 				84C138502E551A0600002F43 /* Profile.swift in Sources */,
 				84C138562E551F4100002F43 /* RankingEngine.swift in Sources */,
 				84C1384E2E551A0000002F43 /* Search.swift in Sources */,
 				84C138542E551F3800002F43 /* Sentiment.swift in Sources */,
 				84C138462E40794500002F43 /* book_ratingApp.swift in Sources */,
 				84C138442E40793400002F43 /* Feed.swift in Sources */,
+				8447D5F82E5CE63300E97D46 /* RanklitTextField.swift in Sources */,
+				8447D5FE2E5CEA1E00E97D46 /* UsernameView.swift in Sources */,
+				8447D6002E5CEB2400E97D46 /* AgeView.swift in Sources */,
+				8447D5E72E5CD37400E97D46 /* AuthView.swift in Sources */,
+				8447D5F22E5CE53900E97D46 /* AuthViewModel.swift in Sources */,
 				84C138522E551A6600002F43 /* BookCompare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

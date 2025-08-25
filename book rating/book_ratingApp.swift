@@ -12,7 +12,7 @@ import SwiftUI
 struct book_ratingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AuthView()
         }
     }
 }
