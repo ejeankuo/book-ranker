@@ -1,8 +1,8 @@
 //
-//  Profile.swift
+//  ProfileView.swift
 //  book rating
 //
-//  Created by Ejean Kuo on 8/19/25.
+//  Created by Ejean Kuo on 8/25/25.
 //
 //  A user's profile.
 //  Shows:
@@ -11,3 +11,14 @@
 //      -- Recent activity (books logged)
 //  A user can edit their profile (name, username, bio) from here.
 
+import SwiftUI
+
+struct ProfileView: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+#Preview {
+    ProfileView()
+}

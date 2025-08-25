@@ -24,7 +24,6 @@ struct UsernameView: View {
             SecureField("password", text: $viewModel.registerPassword)
                 .padding(.horizontal,25)
                 .padding(.top, 15)
-                .font(.body.italic())
                 .padding(.bottom, 6)
                 .overlay(alignment: .bottom) {
                         Rectangle()

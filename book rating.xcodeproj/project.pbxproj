@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84371A732E5CF0D000BC0E82 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A722E5CF0D000BC0E82 /* AuthService.swift */; };
+		84371A762E5CF35600BC0E82 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 84371A752E5CF35600BC0E82 /* Supabase */; };
+		84371A782E5CFEEE00BC0E82 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A772E5CFEEE00BC0E82 /* ProfileView.swift */; };
+		84371A7A2E5CFEFA00BC0E82 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A792E5CFEFA00BC0E82 /* SearchView.swift */; };
+		84371A7C2E5CFF0300BC0E82 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A7B2E5CFF0300BC0E82 /* LibraryView.swift */; };
+		84371A7E2E5CFF0E00BC0E82 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A7D2E5CFF0E00BC0E82 /* FeedView.swift */; };
+		84371A802E5CFF1900BC0E82 /* CompareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A7F2E5CFF1900BC0E82 /* CompareView.swift */; };
 		8447D5E72E5CD37400E97D46 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5E62E5CD37100E97D46 /* AuthView.swift */; };
 		8447D5EB2E5CDBFD00E97D46 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5EA2E5CDBFA00E97D46 /* LogInView.swift */; };
 		8447D5F22E5CE53900E97D46 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5F12E5CE53300E97D46 /* AuthViewModel.swift */; };
@@ -16,15 +23,10 @@
 		8447D5FE2E5CEA1E00E97D46 /* UsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5FD2E5CEA1E00E97D46 /* UsernameView.swift */; };
 		8447D6002E5CEB2400E97D46 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5FF2E5CEB2300E97D46 /* AgeView.swift */; };
 		84C1383B2E40768A00002F43 /* book_ratingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138392E40768A00002F43 /* book_ratingTests.swift */; };
-		84C138442E40793400002F43 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138422E40781300002F43 /* Feed.swift */; };
 		84C138452E40793F00002F43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138342E40767200002F43 /* ContentView.swift */; };
 		84C138462E40794500002F43 /* book_ratingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138332E40767200002F43 /* book_ratingApp.swift */; };
 		84C138472E40795000002F43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C138312E40767200002F43 /* Assets.xcassets */; };
 		84C1384A2E40929400002F43 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138492E40928F00002F43 /* Book.swift */; };
-		84C1384C2E5519F800002F43 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1384B2E5519F200002F43 /* Library.swift */; };
-		84C1384E2E551A0000002F43 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1384D2E5519FC00002F43 /* Search.swift */; };
-		84C138502E551A0600002F43 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1384F2E551A0300002F43 /* Profile.swift */; };
-		84C138522E551A6600002F43 /* BookCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138512E551A5F00002F43 /* BookCompare.swift */; };
 		84C138542E551F3800002F43 /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138532E551F3400002F43 /* Sentiment.swift */; };
 		84C138562E551F4100002F43 /* RankingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C138552E551F3B00002F43 /* RankingEngine.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84371A722E5CF0D000BC0E82 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		84371A772E5CFEEE00BC0E82 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		84371A792E5CFEFA00BC0E82 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		84371A7B2E5CFF0300BC0E82 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		84371A7D2E5CFF0E00BC0E82 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		84371A7F2E5CFF1900BC0E82 /* CompareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareView.swift; sourceTree = "<group>"; };
 		8447D5E62E5CD37100E97D46 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		8447D5EA2E5CDBFA00E97D46 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		8447D5F12E5CE53300E97D46 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
@@ -65,12 +73,7 @@
 		84C138392E40768A00002F43 /* book_ratingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_ratingTests.swift; sourceTree = "<group>"; };
 		84C1383C2E40769B00002F43 /* book_ratingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_ratingUITests.swift; sourceTree = "<group>"; };
 		84C1383D2E40769B00002F43 /* book_ratingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book_ratingUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		84C138422E40781300002F43 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		84C138492E40928F00002F43 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		84C1384B2E5519F200002F43 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
-		84C1384D2E5519FC00002F43 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
-		84C1384F2E551A0300002F43 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		84C138512E551A5F00002F43 /* BookCompare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCompare.swift; sourceTree = "<group>"; };
 		84C138532E551F3400002F43 /* Sentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
 		84C138552E551F3B00002F43 /* RankingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84371A762E5CF35600BC0E82 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +104,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84371A742E5CF35600BC0E82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8447D5E52E5CD36600E97D46 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +129,7 @@
 				8447D5F92E5CE93900E97D46 /* NameView.swift */,
 				8447D5FD2E5CEA1E00E97D46 /* UsernameView.swift */,
 				8447D5FF2E5CEB2300E97D46 /* AgeView.swift */,
+				84371A722E5CF0D000BC0E82 /* AuthService.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -137,6 +149,7 @@
 				84C138352E40767200002F43 /* book rating */,
 				84C1383A2E40768A00002F43 /* book ratingTests */,
 				84C1383E2E40769B00002F43 /* book ratingUITests */,
+				84371A742E5CF35600BC0E82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,11 +198,11 @@
 		84C1383F2E4076ED00002F43 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				84C1384D2E5519FC00002F43 /* Search.swift */,
-				84C1384F2E551A0300002F43 /* Profile.swift */,
-				84C1384B2E5519F200002F43 /* Library.swift */,
-				84C138422E40781300002F43 /* Feed.swift */,
-				84C138512E551A5F00002F43 /* BookCompare.swift */,
+				84371A7D2E5CFF0E00BC0E82 /* FeedView.swift */,
+				84371A7F2E5CFF1900BC0E82 /* CompareView.swift */,
+				84371A772E5CFEEE00BC0E82 /* ProfileView.swift */,
+				84371A792E5CFEFA00BC0E82 /* SearchView.swift */,
+				84371A7B2E5CFF0300BC0E82 /* LibraryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,6 +234,7 @@
 			);
 			name = "book rating";
 			packageProductDependencies = (
+				84371A752E5CF35600BC0E82 /* Supabase */,
 			);
 			productName = "book rating";
 			productReference = 84C138062E40763500002F43 /* book rating.app */;
@@ -343,24 +357,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84371A7A2E5CFEFA00BC0E82 /* SearchView.swift in Sources */,
 				84C138452E40793F00002F43 /* ContentView.swift in Sources */,
 				84C1384A2E40929400002F43 /* Book.swift in Sources */,
 				8447D5EB2E5CDBFD00E97D46 /* LogInView.swift in Sources */,
 				8447D5F52E5CE58600E97D46 /* EmailView.swift in Sources */,
-				84C1384C2E5519F800002F43 /* Library.swift in Sources */,
+				84371A802E5CFF1900BC0E82 /* CompareView.swift in Sources */,
+				84371A7E2E5CFF0E00BC0E82 /* FeedView.swift in Sources */,
 				8447D5FA2E5CE93900E97D46 /* NameView.swift in Sources */,
-				84C138502E551A0600002F43 /* Profile.swift in Sources */,
+				84371A7C2E5CFF0300BC0E82 /* LibraryView.swift in Sources */,
+				84371A732E5CF0D000BC0E82 /* AuthService.swift in Sources */,
 				84C138562E551F4100002F43 /* RankingEngine.swift in Sources */,
-				84C1384E2E551A0000002F43 /* Search.swift in Sources */,
 				84C138542E551F3800002F43 /* Sentiment.swift in Sources */,
 				84C138462E40794500002F43 /* book_ratingApp.swift in Sources */,
-				84C138442E40793400002F43 /* Feed.swift in Sources */,
 				8447D5F82E5CE63300E97D46 /* RanklitTextField.swift in Sources */,
 				8447D5FE2E5CEA1E00E97D46 /* UsernameView.swift in Sources */,
 				8447D6002E5CEB2400E97D46 /* AgeView.swift in Sources */,
 				8447D5E72E5CD37400E97D46 /* AuthView.swift in Sources */,
+				84371A782E5CFEEE00BC0E82 /* ProfileView.swift in Sources */,
 				8447D5F22E5CE53900E97D46 /* AuthViewModel.swift in Sources */,
-				84C138522E551A6600002F43 /* BookCompare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,6 +745,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84371A752E5CF35600BC0E82 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84371A712E5CF03200BC0E82 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84C137FE2E40763500002F43 /* Project object */;
 }

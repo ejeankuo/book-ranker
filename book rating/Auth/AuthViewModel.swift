@@ -18,11 +18,23 @@ final class AuthViewModel {
     var registerDOB = Date.now
     
     func logIn() {
-        
+        Task {
+            do {
+                try await AuthService.shared.signIn(email: logInEmail, password: logInPassword)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
     
     func createAccount() {
-        
+        Task {
+            do {
+                try await AuthService.shared.registerNewUserWithEmail(email: registerEmail, password: registerPassword)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 

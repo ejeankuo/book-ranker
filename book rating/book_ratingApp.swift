@@ -12,7 +12,11 @@ import SwiftUI
 struct book_ratingApp: App {
     var body: some Scene {
         WindowGroup {
-            AuthView()
+            if let user = AuthService.shared.currentUser {
+                ContentView()
+            } else {
+                AuthView()
+            }
         }
     }
 }
