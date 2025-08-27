@@ -13,15 +13,15 @@ struct UsernameView: View {
     var body: some View {
         @Bindable var viewModel = viewModel
         VStack {
-            Text("next, create an account")
+            Text("Next, create an account:")
                 .font(.title)
                 .bold()
                 .padding(.top, 16)
                 .padding(.bottom, 16)
             
-            RanklitTextField(placeHolder: "username", text: $viewModel.registerUsername)
+            RanklitTextField(placeHolder: "Username", text: $viewModel.registerUsername)
             
-            SecureField("password", text: $viewModel.registerPassword)
+            SecureField("Password", text: $viewModel.registerPassword)
                 .padding(.horizontal,25)
                 .padding(.top, 15)
                 .padding(.bottom, 6)
@@ -36,7 +36,7 @@ struct UsernameView: View {
                 AgeView()
                     .environment(viewModel)
             } label: {
-                Text("next")
+                Text("Next")
                     .padding()
                     .frame(maxWidth: .infinity)
                     .foregroundStyle(.white)

@@ -13,13 +13,13 @@ struct AgeView: View {
     var body: some View {
         @Bindable var viewModel = viewModel
         VStack {
-            Text("and, how old are you?")
+            Text("And, how old are you?")
                 .font(.title)
                 .bold()
                 .padding(.top, 16)
                 .padding(.bottom, 16)
             
-            Text("date of birth")
+            Text("Date of Birth")
                 .font(.footnote)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal,25)
@@ -39,7 +39,7 @@ struct AgeView: View {
             Button {
                 viewModel.createAccount()
             } label: {
-                Text("create an account")
+                Text("Create an account")
                     .padding()
                     .frame(maxWidth: .infinity)
                     .foregroundStyle(.white)

@@ -13,19 +13,19 @@ struct EmailView: View {
     var body: some View {
         @Bindable var viewModel = viewModel
         VStack {
-            Text("enter email")
+            Text("Enter an email:")
                 .font(.title)
                 .bold()
                 .padding(.top, 16)
                 .padding(.bottom, 16)
             
-            RanklitTextField(placeHolder: "email address", text: $viewModel.registerEmail)
+            RanklitTextField(placeHolder: "Email address", text: $viewModel.registerEmail)
             
             NavigationLink {
                 NameView()
                     .environment(viewModel)
             } label: {
-                Text("next")
+                Text("Next")
                     .padding()
                     .frame(maxWidth: .infinity)
                     .foregroundStyle(.white)

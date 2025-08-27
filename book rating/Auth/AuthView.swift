@@ -14,16 +14,17 @@ struct AuthView: View {
             VStack {
                 Image("logo")
                     .resizable()
-                    .scaledToFill()
+                    .scaledToFit()
                     .frame(width: UIScreen.main.bounds.width, height:300)
+                    .padding(.top, 60)
                 .clipped()
                 
                 Spacer()
                 
-                Text("welcome to ranklit")
+                Text("Welcome to Ranklit")
                     .font(.title)
                 
-                Text("create an account to rank books \n and find new ones")
+                Text("Create an account to rank books \n and find new ones.")
                     .padding()
                     .multilineTextAlignment(.center)
                 
@@ -33,7 +34,7 @@ struct AuthView: View {
                     EmailView()
                         .environment(viewModel)
                 } label: {
-                    Text("get started")
+                    Text("Get Started")
                         .padding()
                         .frame(maxWidth: .infinity)
                         .foregroundStyle(.white)
@@ -46,7 +47,7 @@ struct AuthView: View {
                     LogInView()
                         .environment(viewModel)
                 } label: {
-                    Text("already have an account? log in")
+                    Text("Already have an account? Log in")
                         .padding()
                         .frame(maxWidth: .infinity)
                         .foregroundStyle(.gray)

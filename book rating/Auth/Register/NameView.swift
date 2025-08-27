@@ -13,16 +13,16 @@ struct NameView: View {
     var body: some View {
         @Bindable var viewModel = viewModel
         VStack {
-            Text("what's your name?")
+            Text("What's your name?")
                 .font(.title)
                 .bold()
-            RanklitTextField(placeHolder: "display name", text: $viewModel.registerDisplayName)
+            RanklitTextField(placeHolder: "Display Name", text: $viewModel.registerDisplayName)
             
             NavigationLink {
                 UsernameView()
                     .environment(viewModel)
             } label: {
-                Text("next")
+                Text("Next")
                     .padding()
                     .frame(maxWidth: .infinity)
                     .foregroundStyle(.white)
