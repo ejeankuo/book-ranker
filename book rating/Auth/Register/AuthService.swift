@@ -4,23 +4,20 @@
 //
 //  Created by Ejean Kuo on 8/25/25.
 //
-
 import Foundation
 import Supabase
 
 enum Secrets {
     static let supabaseURL = "https://vpcolpqdncbgqryclssm.supabase.co"
-    static let supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZwY29scHFkbmNiZ3FyeWNsc3NtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYxNDg2NDMsImV4cCI6MjA3MTcyNDY0M30.fEJ_N6rOyTSsYYWAL6RpUQ91KXyxJpze2n_YY8SaT20"
+    static let supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZwY29scHFkbmNiZ3FyeWNsc3NtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NjE0ODY0MywiZXhwIjoyMDcxNzI0NjQzfQ.o4vG0tPpQ-WKOtjrmnkdWS0nF1GboMYPZmC8adLxOFE"
     
 }
-
 @Observable
 final class AuthService {
     
     static let shared = AuthService()
     
     var currentUser: RanklitUser?
-
     private let auth = SupabaseClient(supabaseURL: URL(string: Secrets.supabaseURL)!, supabaseKey: Secrets.supabaseKey).auth
     
     private init() {
@@ -68,7 +65,6 @@ final class AuthService {
         self.currentUser = nil
     }
 }
-
 // struct to model a User
 struct RanklitUser: Codable, Identifiable, Equatable {
     var id: UUID?
@@ -91,11 +87,9 @@ struct RanklitUser: Codable, Identifiable, Equatable {
         case servers = "servers"
     }
 }
-
 enum Collection {
     static let users = "users"
 }
-
 // database
 @Observable
 final class DatabaseService {
@@ -173,3 +167,4 @@ final class DatabaseService {
         UserDefaults.standard.setValue(nil, forKey: "servers")
     }
 }
+
