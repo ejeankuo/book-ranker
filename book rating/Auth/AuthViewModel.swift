@@ -30,7 +30,8 @@ final class AuthViewModel {
     func createAccount() {
         Task {
             do {
-                try await AuthService.shared.registerNewUserWithEmail(email: registerEmail, password: registerPassword)
+                let user = RanklitUser(createdAt: .now, username: registerUsername, displayName: registerDisplayName, email: registerEmail, imageURL: "", dob: registerDOB, servers: [])
+                try await AuthService.shared.registerNewUserWithEmail(user: user, password: registerPassword)
             } catch {
                 print(error.localizedDescription)
             }
