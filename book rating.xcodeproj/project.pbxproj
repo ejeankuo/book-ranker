@@ -17,6 +17,10 @@
 		84371A822E5D294700BC0E82 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A812E5D294700BC0E82 /* UserProfile.swift */; };
 		84371A852E5D2A3D00BC0E82 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A842E5D2A3D00BC0E82 /* ProfileViewModel.swift */; };
 		84371A872E5D2A4F00BC0E82 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A862E5D2A4F00BC0E82 /* EditProfileView.swift */; };
+		84371A8B2E66675400BC0E82 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A8A2E66675400BC0E82 /* Secrets.swift */; };
+		84371A8D2E6667AA00BC0E82 /* RanklitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A8C2E6667AA00BC0E82 /* RanklitUser.swift */; };
+		84371A902E6667FD00BC0E82 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A8F2E6667FD00BC0E82 /* DatabaseService.swift */; };
+		84371A942E66685B00BC0E82 /* LocalDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84371A932E66685B00BC0E82 /* LocalDatabaseService.swift */; };
 		8447D5E72E5CD37400E97D46 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5E62E5CD37100E97D46 /* AuthView.swift */; };
 		8447D5EB2E5CDBFD00E97D46 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5EA2E5CDBFA00E97D46 /* LogInView.swift */; };
 		8447D5F22E5CE53900E97D46 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447D5F12E5CE53300E97D46 /* AuthViewModel.swift */; };
@@ -61,6 +65,10 @@
 		84371A812E5D294700BC0E82 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		84371A842E5D2A3D00BC0E82 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		84371A862E5D2A4F00BC0E82 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		84371A8A2E66675400BC0E82 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		84371A8C2E6667AA00BC0E82 /* RanklitUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RanklitUser.swift; sourceTree = "<group>"; };
+		84371A8F2E6667FD00BC0E82 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		84371A932E66685B00BC0E82 /* LocalDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabaseService.swift; sourceTree = "<group>"; };
 		8447D5E62E5CD37100E97D46 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		8447D5EA2E5CDBFA00E97D46 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		8447D5F12E5CE53300E97D46 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
@@ -127,6 +135,15 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		84371A8E2E6667E600BC0E82 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84371A8F2E6667FD00BC0E82 /* DatabaseService.swift */,
+				84371A932E66685B00BC0E82 /* LocalDatabaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		8447D5E52E5CD36600E97D46 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				8447D5F72E5CE63300E97D46 /* RanklitTextField.swift */,
+				84371A8A2E66675400BC0E82 /* Secrets.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -182,6 +200,7 @@
 		84C138352E40767200002F43 /* book rating */ = {
 			isa = PBXGroup;
 			children = (
+				84371A8E2E6667E600BC0E82 /* Services */,
 				8447D5F62E5CE61700E97D46 /* Util */,
 				8447D5E52E5CD36600E97D46 /* Auth */,
 				84C138312E40767200002F43 /* Assets.xcassets */,
@@ -230,6 +249,7 @@
 				84C138532E551F3400002F43 /* Sentiment.swift */,
 				84C138552E551F3B00002F43 /* RankingEngine.swift */,
 				84371A812E5D294700BC0E82 /* UserProfile.swift */,
+				84371A8C2E6667AA00BC0E82 /* RanklitUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -374,11 +394,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84371A8D2E6667AA00BC0E82 /* RanklitUser.swift in Sources */,
 				84371A7A2E5CFEFA00BC0E82 /* SearchView.swift in Sources */,
 				84C138452E40793F00002F43 /* ContentView.swift in Sources */,
 				84C1384A2E40929400002F43 /* Book.swift in Sources */,
 				8447D5EB2E5CDBFD00E97D46 /* LogInView.swift in Sources */,
 				8447D5F52E5CE58600E97D46 /* EmailView.swift in Sources */,
+				84371A902E6667FD00BC0E82 /* DatabaseService.swift in Sources */,
 				84371A802E5CFF1900BC0E82 /* CompareView.swift in Sources */,
 				84371A852E5D2A3D00BC0E82 /* ProfileViewModel.swift in Sources */,
 				84371A7E2E5CFF0E00BC0E82 /* FeedView.swift in Sources */,
@@ -392,8 +414,10 @@
 				84C138462E40794500002F43 /* book_ratingApp.swift in Sources */,
 				8447D5F82E5CE63300E97D46 /* RanklitTextField.swift in Sources */,
 				8447D5FE2E5CEA1E00E97D46 /* UsernameView.swift in Sources */,
+				84371A942E66685B00BC0E82 /* LocalDatabaseService.swift in Sources */,
 				8447D6002E5CEB2400E97D46 /* AgeView.swift in Sources */,
 				8447D5E72E5CD37400E97D46 /* AuthView.swift in Sources */,
+				84371A8B2E66675400BC0E82 /* Secrets.swift in Sources */,
 				84371A782E5CFEEE00BC0E82 /* ProfileView.swift in Sources */,
 				8447D5F22E5CE53900E97D46 /* AuthViewModel.swift in Sources */,
 			);
