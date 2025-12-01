@@ -28,3 +28,6 @@ This project is still in development.
 - **Backend/Auth:** Supabase
 - **Book Data:** Open Library API
 - **Language:** Swift
+
+<img width="206" height="1622" alt="Simulator Screenshot - iPhone 16 Pro - 2025-12-01 at 15 31 48" src="https://github.com/user-attachments/assets/95df36d9-27b0-4c83-b257-f299ae7ebca3" />
+
